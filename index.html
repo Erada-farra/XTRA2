@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="XTRA Logo">
+            </a>
+        </div>
+        <button class="navbar__hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar__links">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link active">Home</a>
+            </li>
+
+            <li class="navbar__item navbar__item--dropdown">
+                <a href="about.html" class="navbar__link">
+                    About <span class="arrow-icon">&#8963;</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li class="dropdown__item--sub">
+                        <a href="#">Dropdown menu <span>&#8250;</span></a>
+                        <ul class="dropdown dropdown--sub">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Submenu 2</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar__item">
+                <a href="services.html" class="navbar__link">Services</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="blog.html" class="navbar__link">Blog</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="shop.html" class="navbar__link">Shop</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="faq.html" class="navbar__link">FAQ</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+
+        </ul>
+        <div class="navbar__actions">
+            <a href="services.html" class="navbar__btn">
+                <img src="assets/images/icons8-bike-48.png" alt="bike icon">
+                Help & Service
+            </a>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-heart-50.png" alt="Wishlist">
+                <span class="badge">0</span>
+            </button>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-cart-64.png" alt="Cart">
+                <span class="badge">0</span>
+            </button>
+        </div>
+
+    </nav>
+    <!-- ===== END NAVBAR ===== -->
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+
+        <div class="hero__content">
+            <h1 class="hero__title">
+                XTRA Bicycle is not just a
+                <span class="hero__title--highlight">Regular Bicycle</span>
+            </h1>
+            <p class="hero__desc">
+                A bicycle, also called a pedal cycle, bike or cycle, is a
+                human-powered or motor-powered assisted.
+            </p>
+            <div class="hero__price">
+                <span class="hero__price--dollar">$</span>
+                <span class="hero__price--number">1749</span>
+            </div>
+            <div class="hero__actions">
+                <a href="#" class="hero__btn">See full details</a>
+                <span class="hero__colors-text">Bike have different colors</span>
+            </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+            <img src="assets/images/طبيعة.png" alt="Nature Background" class="hero__nature-bg">
+            <img src="assets/images/بسكليت اسود.png" alt="XTRA Bike" class="hero__bike">
+        </div>
+
+    </section>
+    <!-- ===== END HERO SECTION ===== -->
+
+    <!-- ===== REVOLUTION SECTION ===== -->
+    <section class="revolution">
+
+        <div class="revolution__image-wrapper">
+            <img src="assets/images/بسكليت ابيض القسم الثاني (2).png" alt="Silver Bike" class="revolution__bike">
+        </div>
+
+        <div class="revolution__content">
+            <h2 class="revolution__title">
+                XTRA Bicycle — It's Not
+                Just a Bike, <span class="revolution__title--highlight">It's a Revolution</span>
+            </h2>
+            <p class="revolution__desc">
+                A bicycle, also called a pedal cycle, bike or cycle, is a human
+                powered or motor-powered assisted, pedal-driven, single-track
+                vehicle, having two wheels attached to a frame, one behind the
+                other. A bicycle rider is called a cyclist, or bicyclist.
+            </p>
+            <ul class="revolution__features">
+                <li>
+                    <span class="check-icon">&#10003;</span>
+                    Free test rides
+                </li>
+                <li>
+                    <span class="check-icon">&#10003;</span>
+                    Expert repairs
+                </li>
+                <li>
+                    <span class="check-icon">&#10003;</span>
+                    Custom builds
+                </li>
+                <li>
+                    <span class="check-icon">&#10003;</span>
+                    Gear upgrades
+                </li>
+                <li>
+                    <span class="check-icon">&#10003;</span>
+                    Electric bikes
+                </li>
+                <li>
+                    <span class="check-icon">&#10003;</span>
+                    Free Shipping
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- ===== END REVOLUTION SECTION ===== -->
+
+    <!-- ===== RIDE SECTION ===== -->
+    <section class="ride">
+
+        <div class="ride__card">
+
+            <h2 class="ride__title">It's a great day for a ride.</h2>
+
+            <p class="ride__desc">
+                A bicycle, also called a pedal cycle, bike or cycle, is a human powered
+            </p>
+
+            <button class="ride__btn">
+                <span class="ride__btn-text">Explore Products</span>
+                <span class="ride__btn-arrow">&#8594;</span>
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ===== END RIDE SECTION ===== -->
+
+    <!-- ===== BESTSELLERS SECTION ===== -->
+    <section class="bestsellers">
+        <div class="bestsellers__marquee-bg">
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <h2 class="bestsellers__title">
+            Meet our <span class="bestsellers__title--highlight">Bestsellers</span>
+        </h2>
+        <!--1-->
+        <div class="bestsellers__grid">
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <span class="product-card__badge product-card__badge--sale">Sale!</span>
+                    <span class="product-card__badge product-card__badge--percent">22%</span>
+                    <img src="assets/images/Discover.webp" alt="Discover 2 Step-Thru" class="product-card__img">
+                    <div class="product-card__hot-marquee">
+                        <span>⚡ HOT SALE 22% OFF ⚡ HOT SALE 22% OFF ⚡ HOT SALE 22% OFF ⚡ HOT SALE 22% OFF ⚡ HOT SALE 22%
+                            OFF ⚡ HOT SALE 22% OFF ⚡</span>
+                    </div>
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-card__name">Discover 2 Step-Thru</h3>
+                    <p class="product-card__brand">Premium Sets</p>
+                    <div class="product-card__pricing">
+                        <span class="product-card__old-price">$980</span>
+                        <span class="product-card__price">$768</span>
+                    </div>
+                    <button class="product-card__btn">
+                        <span>🛒</span> Add to cart
+                    </button>
+                </div>
+            </div>
+            <!--2-->
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/Folding.webp" alt="Folding Electric Bike" class="product-card__img">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-card__name">Folding Electric Bike</h3>
+                    <p class="product-card__brand">Exclusive</p>
+                    <div class="product-card__pricing">
+                        <span class="product-card__price">$1,270</span>
+                    </div>
+                    <button class="product-card__btn">
+                        <span>🛒</span> Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <!--3-->
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/ParkWood.png" alt="Parkwood Electric Bike" class="product-card__img">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-card__name">Parkwood Electric Bike</h3>
+                    <p class="product-card__brand">Cannondale</p>
+                    <div class="product-card__pricing">
+                        <span class="product-card__price">$980</span>
+                    </div>
+                    <button class="product-card__btn">
+                        <span>🛒</span> Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <!--4-->
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/da562.webp" alt="Special Roar Bike CE" class="product-card__img">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-card__name">Special Roar Bike CE</h3>
+                    <p class="product-card__brand">Cannondale</p>
+                    <div class="product-card__pricing">
+                        <span class="product-card__price">$675</span>
+                    </div>
+                    <button class="product-card__btn">
+                        <span>🛒</span> Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <!--5-->
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/vega.webp" alt="Vega CE Low-Step" class="product-card__img">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-card__name">Vega CE Low-Step</h3>
+                    <p class="product-card__brand">Cannondale</p>
+                    <div class="product-card__pricing">
+                        <span class="product-card__price">$805</span>
+                    </div>
+                    <button class="product-card__btn">
+                        <span>🛒</span> Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <!--6-->
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/Hybrid.png" alt="Hybrid Electric Bike" class="product-card__img">
+                </div>
+                <div class="product-card__info">
+                    <h3 class="product-card__name">Hybrid Electric Bike</h3>
+                    <p class="product-card__brand">Bianchi</p>
+                    <div class="product-card__pricing">
+                        <span class="product-card__price">$999</span>
+                    </div>
+                    <button class="product-card__btn">
+                        <span>🛒</span> Add to cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bestsellers__view-all">
+            <button class="view-all-btn">
+                <img src="assets/images/icons8-bike-48.png" alt="bike" class="view-all-btn__icon">
+                <span class="view-all-btn__text view-all-btn__text--default">VIEW ALL PRODUCTS</span>
+                <span class="view-all-btn__text view-all-btn__text--hover">Let's See New Bikes</span>
+            </button>
+        </div>
+    </section>
+    <!-- ===== END BESTSELLERS SECTION ===== -->
+
+    <!-- ===== CATEGORIES SECTION ===== -->
+    <section class="categories">
+
+        <div class="category-card">
+            <img src="assets/images/Electric.jpg" alt="Electric bicycles" class="category-card__img">
+            <div class="category-card__footer">
+                <div class="category-card__text">
+                    <span class="category-card__count">+120 bicycles</span>
+                    <h3 class="category-card__title">Electric bicycles</h3>
+                </div>
+                <button class="category-card__arrow-btn">
+                    <span>&#8250;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="assets/images/Children.jpg" alt="Children bicycles" class="category-card__img">
+            <div class="category-card__footer">
+                <div class="category-card__text">
+                    <span class="category-card__count">+120 bicycles</span>
+                    <h3 class="category-card__title">Children bicycles</h3>
+                </div>
+                <button class="category-card__arrow-btn">
+                    <span>&#8250;</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END CATEGORIES SECTION ===== -->
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials">
+        <div class="testimonials__left">
+            <h2 class="testimonials__title">
+                What say <span class="testimonials__title--highlight">Pro People</span>
+            </h2>
+            <div class="testimonials__slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-item__author">
+                        <img src="assets/images/Antonio.jpeg" alt="Antonio Benz" class="testimonial-item__photo">
+                        <div>
+                            <h4 class="testimonial-item__name">Antonio Benz</h4>
+                            <span class="testimonial-item__role">Bike designer</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-item__text">
+                        A bicycle, also called a pedal cycle, bike or cycle, is a human-powered
+                        or motor-powered assisted, pedal-driven, single-track vehicle, having two
+                        wheels attached to a frame, one behind the other. A bicycle rider is
+                        called a cyclist, or bicyclist.
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-item__author">
+                        <img src="assets/images/Sarah.jpeg" alt="Sarah Lisgun" class="testimonial-item__photo">
+                        <div>
+                            <h4 class="testimonial-item__name">Sarah Lisgun</h4>
+                            <span class="testimonial-item__role">Bike Rider</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-item__text">
+                        A bicycle, also called a pedal cycle, bike or cycle, is a human-powered
+                        or motor-powered assisted, pedal-driven, single-track vehicle, having two
+                        wheels attached to a frame, one behind the other. A bicycle rider is
+                        called a cyclist, or bicyclist.
+                    </p>
+                </div>
+
+            </div>
+            <div class="testimonials__footer">
+                <span class="testimonials__quote">&#8220;</span>
+                <div class="testimonials__arrows">
+                    <button class="testimonials__arrow testimonials__arrow--prev">&#8592;</button>
+                    <button class="testimonials__arrow testimonials__arrow--next">&#8594;</button>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials__right">
+            <img src="assets/images/special-offer (2).png" alt="Bike" class="testimonials__img">
+        </div>
+
+    </section>
+    <!-- ===== END TESTIMONIALS SECTION ===== -->
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="newsletter">
+
+        <div class="newsletter__marquee-bg">
+            <span>MEET OUR SPECIAL BIKES</span>
+            <span>MEET OUR SPECIAL BIKES</span>
+            <span>MEET OUR SPECIAL BIKES</span>
+            <span>MEET OUR SPECIAL BIKES</span>
+        </div>
+
+        <div class="newsletter__content">
+            <h2 class="newsletter__title">
+                Get your own <span class="newsletter__title--highlight">Special Bike</span>
+            </h2>
+            <p class="newsletter__desc">
+                Subscribe to our newsletter to get new Bike Offers
+            </p>
+
+            <div class="newsletter__form">
+                <div class="newsletter__input-wrapper">
+                    <img src="assets/images/بريد.png" alt="email" class="newsletter__email-icon">
+                    <input type="email" class="newsletter__input" placeholder="Enter your email ...">
+                </div>
+                <button class="newsletter__btn">
+                    <img src="assets/images/بريد.png" alt="email" class="newsletter__btn-icon">
+                    <span class="newsletter__btn-text--default">JOIN NOW</span>
+                    <span class="newsletter__btn-text--hover">JOIN NOW</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===== END NEWSLETTER SECTION ===== -->
+
+    <!-- ===== CONTACT BAR ===== -->
+    <div class="contact-bar">
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Pre-sale Questions</span>
+            <a href="mailto:help@xtrabicycle.com" class="contact-bar__value">help@xtrabicycle.com</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Call Us</span>
+            <a href="tel:+18002345679" class="contact-bar__value">+1 800 2345 6789</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Our Location</span>
+            <a href="#" class="contact-bar__value">#2354, Beverly Hills, LA</a>
+        </div>
+    </div>
+    <!-- ===== END CONTACT BAR ===== -->
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <div class="footer__grid">
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Office</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__office-list">
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/موقع.png" alt="location">
+                        </div>
+                        <span>121 King Street, NewYork</span>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/هاتف.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003334455">+1 (800) 333 44 55</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/بريد.png" alt="email">
+                        </div>
+                        <a href="mailto:xtrabike@gmail.com">xtrabike@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/تلفون.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003339988">+1 (800) 333 99 88</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/اكس.png" alt="x">
+                        </div>
+                        <a href="#">@xtra_bikeshop</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">News</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__news-list">
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/montain-biker.jpg" alt="News 1" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">Top 7 Must have Accessories for...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 24</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/images.jpeg" alt="News 2" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">How to Choose the Perfect Bike for Yo...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 18</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Shortcuts</h4>
+                <div class="footer__col-underline"></div>
+                <div class="footer__shortcuts">
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Home</a></li>
+                        <li><a href="#">&#8250; City Store</a></li>
+                        <li><a href="#">&#8250; News</a></li>
+                        <li><a href="#">&#8250; Clients</a></li>
+                        <li><a href="#">&#8250; Consultation</a></li>
+                        <li><a href="#">&#8250; Publicity</a></li>
+                        <li><a href="#">&#8250; Support</a></li>
+                    </ul>
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Maps</a></li>
+                        <li><a href="#">&#8250; Careers</a></li>
+                        <li><a href="#">&#8250; Employees</a></li>
+                        <li><a href="#">&#8250; Teams</a></li>
+                        <li><a href="#">&#8250; Benefits</a></li>
+                        <li><a href="#">&#8250; Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Working Hours</h4>
+                <div class="footer__col-underline"></div>
+                <p class="footer__hours-desc">
+                    Our support available to help you
+                    24 hours a day, seven days a week.
+                </p>
+                <ul class="footer__hours-list">
+                    <li>
+                        <span class="footer__hours-day">Monday to Friday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 4PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Saturday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 1PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Sunday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time closed">Closed</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+            <div class="footer__payments">
+                <img src="assets/images/Mastercard.png" alt="Mastercard">
+                <img src="assets/images/PayPal.png" alt="PayPal">
+                <img src="assets/images/American Express.png" alt="American Express">
+                <img src="assets/images/bitcoin.jpeg" alt="bitcoin">
+                <img src="assets/images/Visa.png" alt="Visa">
+            </div>
+        </div>
+
+    </footer>
+    <!-- ===== END FOOTER ===== -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

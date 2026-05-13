@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="XTRA Logo">
+            </a>
+        </div>
+        <button class="navbar__hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar__links">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link">Home</a>
+            </li>
+
+            <li class="navbar__item navbar__item--dropdown">
+                <a href="about.html" class="navbar__link">
+                    About <span class="arrow-icon">&#8963;</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li class="dropdown__item--sub">
+                        <a href="#">Dropdown menu <span>&#8250;</span></a>
+                        <ul class="dropdown dropdown--sub">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Submenu 2</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar__item">
+                <a href="services.html" class="navbar__link">Services</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="blog.html" class="navbar__link">Blog</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="shop.html" class="navbar__link">Shop</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="faq.html" class="navbar__link">FAQ</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="#" class="navbar__link active">Contact</a>
+            </li>
+
+        </ul>
+        <div class="navbar__actions">
+            <a href="services.html" class="navbar__btn">
+                <img src="assets/images/icons8-bike-48.png" alt="bike icon">
+                Help & Service
+            </a>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-heart-50.png" alt="Wishlist">
+                <span class="badge">0</span>
+            </button>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-cart-64.png" alt="Cart">
+                <span class="badge">0</span>
+            </button>
+        </div>
+
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-wrapper">
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24180.89856182306!2d-74.01386!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a7b1e4ecf%3A0x57de9e3d2d419de3!2sLower%20Manhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="contact-info">
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="assets/images/موقع.png" alt="Facebook">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Address</h4>
+                        <p>#2245, Los Angeles, CA</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="assets/images/موقع.png" alt="Facebook">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Address 2</h4>
+                        <p>#1456, Manhattan, NY</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="assets/images/كونتاكت هاتف.png" alt="Facebook">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Phone</h4>
+                        <p>+1 (800) 333 4455</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="assets/images/اكس.png" alt="Facebook">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Social media</h4>
+                        <p>@xtra_theme_bike</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="assets/images/فيس.png" alt="Facebook">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Facebook</h4>
+                        <p>@xtratheme</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="assets/images/بريد.png" alt="Facebook">
+                    </div>
+                    <div class="contact-text">
+                        <h4>Support</h4>
+                        <p>support@yourwebsite.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2 class="contact-title">Contact <span>Us</span></h2>
+
+                <div class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name (*)</label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label>Your Email (*)</label>
+                            <input type="email" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label>Department</label>
+                            <select>
+                                <option>Business Department</option>
+                                <option>Support Department</option>
+                                <option>Sales Department</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Your Question</label>
+                        <textarea rows="6" placeholder=""></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="contact-bar">
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Pre-sale Questions</span>
+            <a href="mailto:help@xtrabicycle.com" class="contact-bar__value">help@xtrabicycle.com</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Call Us</span>
+            <a href="tel:+18002345679" class="contact-bar__value">+1 800 2345 6789</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Our Location</span>
+            <a href="#" class="contact-bar__value">#2354, Beverly Hills, LA</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer__grid">
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Office</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__office-list">
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/موقع.png" alt="location">
+                        </div>
+                        <span>121 King Street, NewYork</span>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/هاتف.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003334455">+1 (800) 333 44 55</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/بريد.png" alt="email">
+                        </div>
+                        <a href="mailto:xtrabike@gmail.com">xtrabike@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/تلفون.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003339988">+1 (800) 333 99 88</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/اكس.png" alt="x">
+                        </div>
+                        <a href="#">@xtra_bikeshop</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">News</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__news-list">
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/montain-biker.jpg" alt="News 1" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">Top 7 Must have Accessories for...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 24</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/images.jpeg" alt="News 2" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">How to Choose the Perfect Bike for Yo...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 18</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Shortcuts</h4>
+                <div class="footer__col-underline"></div>
+                <div class="footer__shortcuts">
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Home</a></li>
+                        <li><a href="#">&#8250; City Store</a></li>
+                        <li><a href="#">&#8250; News</a></li>
+                        <li><a href="#">&#8250; Clients</a></li>
+                        <li><a href="#">&#8250; Consultation</a></li>
+                        <li><a href="#">&#8250; Publicity</a></li>
+                        <li><a href="#">&#8250; Support</a></li>
+                    </ul>
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Maps</a></li>
+                        <li><a href="#">&#8250; Careers</a></li>
+                        <li><a href="#">&#8250; Employees</a></li>
+                        <li><a href="#">&#8250; Teams</a></li>
+                        <li><a href="#">&#8250; Benefits</a></li>
+                        <li><a href="#">&#8250; Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Working Hours</h4>
+                <div class="footer__col-underline"></div>
+                <p class="footer__hours-desc">
+                    Our support available to help you
+                    24 hours a day, seven days a week.
+                </p>
+                <ul class="footer__hours-list">
+                    <li>
+                        <span class="footer__hours-day">Monday to Friday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 4PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Saturday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 1PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Sunday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time closed">Closed</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+            <div class="footer__payments">
+                <img src="assets/images/Mastercard.png" alt="Mastercard">
+                <img src="assets/images/PayPal.png" alt="PayPal">
+                <img src="assets/images/American Express.png" alt="American Express">
+                <img src="assets/images/bitcoin.jpeg" alt="bitcoin">
+                <img src="assets/images/Visa.png" alt="Visa">
+            </div>
+        </div>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

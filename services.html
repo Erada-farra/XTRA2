@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="XTRA Logo">
+            </a>
+        </div>
+        <button class="navbar__hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar__links">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link">Home</a>
+            </li>
+
+            <li class="navbar__item navbar__item--dropdown">
+                <a href="about.html" class="navbar__link">
+                    About <span class="arrow-icon">&#8963;</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li class="dropdown__item--sub">
+                        <a href="#">Dropdown menu <span>&#8250;</span></a>
+                        <ul class="dropdown dropdown--sub">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Submenu 2</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar__item">
+                <a href="#" class="navbar__link active">Services</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="blog.html" class="navbar__link">Blog</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="shop.html" class="navbar__link">Shop</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="faq.html" class="navbar__link">FAQ</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+
+        </ul>
+        <div class="navbar__actions">
+            <a href="services.html" class="navbar__btn">
+                <img src="assets/images/icons8-bike-48.png" alt="bike icon">
+                Help & Service
+            </a>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-heart-50.png" alt="Wishlist">
+                <span class="badge">0</span>
+            </button>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-cart-64.png" alt="Cart">
+                <span class="badge">0</span>
+            </button>
+        </div>
+
+    </nav>
+    <!--القسم الاول-->
+    <section class="bike-services">
+        <div class="container">
+
+            <div class="services-header">
+                <h2>Our Popular <span>Bike Services</span></h2>
+                <p>At Velocity Cycles, we take pride in delivering top notch services to keep your bike in peak
+                    condition</p>
+            </div>
+
+            <div class="services-container">
+
+                <div class="service-box">
+                    <div class="service-icon-circle">
+                        <img src="assets/images/شعار بسكليت.png" alt="Tune-Up Icon">
+                    </div>
+                    <h3>Tune-Up Packages</h3>
+                    <p>Want a bike that fits your style and performance goals? We offer custom builds using high-quality
+                        components</p>
+                </div>
+
+                <div class="service-box featured">
+                    <div class="service-icon-circle">
+                        <img src="assets/images/خوذة.png" alt="Checks & Setup Icon">
+                    </div>
+                    <h3>Checks & Setup</h3>
+                    <p>Want a bike that fits your style and performance goals? We offer custom builds using high-quality
+                        components</p>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon-circle">
+                        <img src="assets/images/اعدادت.png" alt="Chain Cleaning Icon">
+                    </div>
+                    <h3>Chain Cleaning</h3>
+                    <p>Want a bike that fits your style and performance goals? We offer custom builds using high-quality
+                        components</p>
+                </div>
+
+            </div>
+
+            <div class="services-footer">
+                <a href="#" class="order-btn">
+                    Order your Services <span class="arrow">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--القسم الثاني-->
+    <section class="connect-section">
+        <div class="container">
+            <div class="connect-wrapper">
+
+                <div class="connect-info">
+                    <h2>Ride. Learn. <span>Connect.</span></h2>
+                    <p class="description">
+                        At Velocity Cycles, we take pride in delivering top notch services to keep your bike in peak
+                        condition
+                    </p>
+
+                    <div class="checklist-grid">
+                        <div class="check-item">
+                            <span class="check-icon">✔</span>
+                            <span class="check-text">Free test rides</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-icon">✔</span>
+                            <span class="check-text">Expert repairs</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-icon">✔</span>
+                            <span class="check-text">Custom builds</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-icon">✔</span>
+                            <span class="check-text">Gear upgrades</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-icon">✔</span>
+                            <span class="check-text">Electric bikes</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-icon">✔</span>
+                            <span class="check-text">Free Shipping</span>
+                        </div>
+                    </div>
+
+                    <div class="connect-actions">
+                        <a href="#" class="btn-primary">See full details</a>
+                        <span class="note-text">Bike have different colors</span>
+                    </div>
+                </div>
+
+                <div class="connect-gallery">
+                    <img src="assets/images/صور في صورة.png" alt="Cycling Gallery" class="composite-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--القسم الثالث-->
+    <section class="faq-section">
+        <div class="container">
+            <div class="bestsellers-bg">
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+                <span>MEET OUR BESTSELLERS &nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div class="faq-header">
+                <h2>Pre Services <span>Common Questions</span></h2>
+                <p>At Velocity Cycles, we take pride in delivering top notch services to keep your bike in peak
+                    condition</p>
+            </div>
+
+            <div class="faq-wrapper">
+
+                <div class="faq-image">
+                    <img src="assets/images/راكب.png" alt="Bicycle Rider on Hill">
+                </div>
+
+                <div class="faq-accordion">
+
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <h4>What types of bikes do you sell?</h4>
+                            <span class="accordion-icon">v</span>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Do you provide bike repair services?</h4>
+                            <span class="accordion-icon">v</span>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How long does a standard tune-up take?</h4>
+                            <span class="accordion-icon">v</span>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Can I book a service appointment online?</h4>
+                            <span class="accordion-icon">v</span>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>What brands of bikes do you carry?</h4>
+                            <span class="accordion-icon">v</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ride">
+
+        <div class="ride__card">
+
+            <h2 class="ride__title">It's a great day for a ride.</h2>
+
+            <p class="ride__desc">
+                A bicycle, also called a pedal cycle, bike or cycle, is a human powered
+            </p>
+
+            <button class="ride__btn">
+                <span class="ride__btn-text">Explore Products</span>
+                <span class="ride__btn-arrow">&#8594;</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <div class="contact-bar">
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Pre-sale Questions</span>
+            <a href="mailto:help@xtrabicycle.com" class="contact-bar__value">help@xtrabicycle.com</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Call Us</span>
+            <a href="tel:+18002345679" class="contact-bar__value">+1 800 2345 6789</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Our Location</span>
+            <a href="#" class="contact-bar__value">#2354, Beverly Hills, LA</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer__grid">
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Office</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__office-list">
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/موقع.png" alt="location">
+                        </div>
+                        <span>121 King Street, NewYork</span>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/هاتف.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003334455">+1 (800) 333 44 55</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/بريد.png" alt="email">
+                        </div>
+                        <a href="mailto:xtrabike@gmail.com">xtrabike@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/تلفون.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003339988">+1 (800) 333 99 88</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/اكس.png" alt="x">
+                        </div>
+                        <a href="#">@xtra_bikeshop</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">News</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__news-list">
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/montain-biker.jpg" alt="News 1" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">Top 7 Must have Accessories for...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 24</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/images.jpeg" alt="News 2" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">How to Choose the Perfect Bike for Yo...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 18</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Shortcuts</h4>
+                <div class="footer__col-underline"></div>
+                <div class="footer__shortcuts">
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Home</a></li>
+                        <li><a href="#">&#8250; City Store</a></li>
+                        <li><a href="#">&#8250; News</a></li>
+                        <li><a href="#">&#8250; Clients</a></li>
+                        <li><a href="#">&#8250; Consultation</a></li>
+                        <li><a href="#">&#8250; Publicity</a></li>
+                        <li><a href="#">&#8250; Support</a></li>
+                    </ul>
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Maps</a></li>
+                        <li><a href="#">&#8250; Careers</a></li>
+                        <li><a href="#">&#8250; Employees</a></li>
+                        <li><a href="#">&#8250; Teams</a></li>
+                        <li><a href="#">&#8250; Benefits</a></li>
+                        <li><a href="#">&#8250; Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Working Hours</h4>
+                <div class="footer__col-underline"></div>
+                <p class="footer__hours-desc">
+                    Our support available to help you
+                    24 hours a day, seven days a week.
+                </p>
+                <ul class="footer__hours-list">
+                    <li>
+                        <span class="footer__hours-day">Monday to Friday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 4PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Saturday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 1PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Sunday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time closed">Closed</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+            <div class="footer__payments">
+                <img src="assets/images/Mastercard.png" alt="Mastercard">
+                <img src="assets/images/PayPal.png" alt="PayPal">
+                <img src="assets/images/American Express.png" alt="American Express">
+                <img src="assets/images/bitcoin.jpeg" alt="bitcoin">
+                <img src="assets/images/Visa.png" alt="Visa">
+            </div>
+        </div>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="XTRA Logo">
+            </a>
+        </div>
+        <button class="navbar__hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar__links">
+
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link">Home</a>
+            </li>
+
+            <li class="navbar__item navbar__item--dropdown">
+                <a href="about.html" class="navbar__link">
+                    About <span class="arrow-icon">&#8963;</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li class="dropdown__item--sub">
+                        <a href="#">Dropdown menu <span>&#8250;</span></a>
+                        <ul class="dropdown dropdown--sub">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Submenu 2</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar__item">
+                <a href="services.html" class="navbar__link">Services</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="blog.html" class="navbar__link">Blog</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="#" class="navbar__link active">Shop</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="faq.html" class="navbar__link">FAQ</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+
+        </ul>
+        <div class="navbar__actions">
+            <a href="services.html" class="navbar__btn">
+                <img src="assets/images/icons8-bike-48.png" alt="bike icon">
+                Help & Service
+            </a>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-heart-50.png" alt="Wishlist">
+                <span class="badge">0</span>
+            </button>
+            <button class="navbar__icon-btn">
+                <img src="assets/images/icons8-cart-64.png" alt="Cart">
+                <span class="badge">0</span>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="shop-page">
+        <h1 class="page-title" id="pageTitle">Shop</h1>
+
+        <div class="toolbar">
+            <div class="results-count" id="resultsCount">Showing 1–6 of 8 results</div>
+            <div class="toolbar-right">
+                <div class="grid-view-btns">
+                    <button class="grid-btn" data-cols="2" title="Two Columns">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <rect x="0" y="0" width="7" height="7" />
+                            <rect x="9" y="0" width="7" height="7" />
+                            <rect x="0" y="9" width="7" height="7" />
+                            <rect x="9" y="9" width="7" height="7" />
+                        </svg>
+                    </button>
+                    <button class="grid-btn active" data-cols="3" title="Three Columns">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <rect x="0" y="0" width="4" height="4" />
+                            <rect x="6" y="0" width="4" height="4" />
+                            <rect x="12" y="0" width="4" height="4" />
+                            <rect x="0" y="6" width="4" height="4" />
+                            <rect x="6" y="6" width="4" height="4" />
+                            <rect x="12" y="6" width="4" height="4" />
+                            <rect x="0" y="12" width="4" height="4" />
+                            <rect x="6" y="12" width="4" height="4" />
+                            <rect x="12" y="12" width="4" height="4" />
+                        </svg>
+                    </button>
+                    <button class="grid-btn" data-cols="4" title="Four Columns">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <rect x="0" y="0" width="3" height="3" />
+                            <rect x="4.3" y="0" width="3" height="3" />
+                            <rect x="8.6" y="0" width="3" height="3" />
+                            <rect x="13" y="0" width="3" height="3" />
+                            <rect x="0" y="4.3" width="3" height="3" />
+                            <rect x="4.3" y="4.3" width="3" height="3" />
+                            <rect x="8.6" y="4.3" width="3" height="3" />
+                            <rect x="13" y="4.3" width="3" height="3" />
+                            <rect x="0" y="8.6" width="3" height="3" />
+                            <rect x="4.3" y="8.6" width="3" height="3" />
+                            <rect x="8.6" y="8.6" width="3" height="3" />
+                            <rect x="13" y="8.6" width="3" height="3" />
+                            <rect x="0" y="13" width="3" height="3" />
+                            <rect x="4.3" y="13" width="3" height="3" />
+                            <rect x="8.6" y="13" width="3" height="3" />
+                            <rect x="13" y="13" width="3" height="3" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="sort-dropdown" id="perPageDropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('perPageDropdown')">
+                        <span id="perPageLabel">6 Products</span>
+                        <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M2 4l4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" id="perPageMenu">
+                        <li class="active" onclick="selectPerPage(6, this)">6 Products</li>
+                        <li onclick="selectPerPage(16, this)">16 Products</li>
+                        <li onclick="selectPerPage(32, this)">32 Products</li>
+                        <li onclick="selectPerPage(48, this)">48 Products</li>
+                        <li onclick="selectPerPage(64, this)">64 Products</li>
+                        <li onclick="selectPerPage(128, this)">128 Products</li>
+                    </ul>
+                </div>
+
+                <div class="sort-dropdown" id="sortDropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('sortDropdown')">
+                        <span id="sortLabel">Default</span>
+                        <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M2 4l4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" id="sortMenu">
+                        <li class="active" onclick="selectSort('Default', this)">Default</li>
+                        <li onclick="selectSort('Popular', this)">Popular</li>
+                        <li onclick="selectSort('Featured', this)">Featured</li>
+                        <li onclick="selectSort('Top Rated', this)">Top Rated</li>
+                        <li onclick="selectSort('Relevance', this)">Relevance</li>
+                        <li onclick="selectSort('Sort by latest', this)">Sort by latest</li>
+                        <li onclick="selectSort('Sort by oldest', this)">Sort by oldest</li>
+                        <li onclick="selectSort('Price low to high', this)">Price low to high</li>
+                        <li onclick="selectSort('Price high to low', this)">Price high to low</li>
+                        <li onclick="selectSort('Highest Discount', this)">Highest Discount</li>
+                        <li onclick="selectSort('Lowest Discount', this)">Lowest Discount</li>
+                        <li onclick="selectSort('Alphabetically, A-Z', this)">Alphabetically, A-Z</li>
+                        <li onclick="selectSort('Alphabetically, Z-A', this)">Alphabetically, Z-A</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs">
+            <button class="cat-tab active" data-cat="all" onclick="filterCategory('all', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                    <rect x="2" y="2" width="7" height="7" rx="1" />
+                    <rect x="11" y="2" width="7" height="7" rx="1" />
+                    <rect x="2" y="11" width="7" height="7" rx="1" />
+                    <rect x="11" y="11" width="7" height="7" rx="1" />
+                </svg>
+                All Products <span class="cat-count">6 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Cannondale" onclick="filterCategory('Cannondale', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Cannondale <span class="cat-count">5 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Orbea" onclick="filterCategory('Orbea', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Orbea <span class="cat-count">4 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Premium Sets" onclick="filterCategory('Premium Sets', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Premium Sets <span class="cat-count">1 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Limited Edition" onclick="filterCategory('Limited Edition', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Limited Edition <span class="cat-count">3 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Exclusive" onclick="filterCategory('Exclusive', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Exclusive <span class="cat-count">2 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Bianchi" onclick="filterCategory('Bianchi', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Bianchi <span class="cat-count">1 Items</span>
+            </button>
+            <button class="cat-tab" data-cat="Specialized" onclick="filterCategory('Specialized', this)">
+                <svg class="cat-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    width="16" height="16">
+                    <path d="M3 4h14v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+                    <path d="M7 4V2M13 4V2" />
+                </svg>
+                Specialized <span class="cat-count">1 Items</span>
+            </button>
+        </div>
+
+        <div class="products-grid cols-3" id="productsGrid">
+
+            <div class="product-card" data-cat="Premium Sets Specialized" data-price="768"
+                data-name="Discover 2 Step-Thru" data-brand="Premium Sets">
+                <div class="product-image">
+                    <div class="badges">
+                        <span class="product-card__badge product-card__badge--sale">Sale!</span>
+                        <span class="product-card__badge product-card__badge--percent">22%</span>
+                    </div>
+                    <div class="sale-ticker">
+                        <span>⚡ HOT SALE 22% OFF ⚡ HOT SALE 22% OFF ⚡ HOT SALE 22% OFF ⚡ HOT SALE 22% OFF ⚡</span>
+                    </div>
+                    <img src="assets/images/Discover.webp" alt="Discover 2 Step-Thru"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http: //www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Discover 2 Step-Thru</h3>
+                    <p class="product-brand">Premium Sets</p>
+                    <div class="product-price">
+                        <span class="old-price">$980</span>
+                        <span class="current-price">$768</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Exclusive Orbea" data-price="1270" data-name="Folding Electric Bike"
+                data-brand="Exclusive">
+                <div class="product-image">
+                    <img src="assets/images/Folding.webp" alt="Folding Electric Bike"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http: //www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Folding Electric Bike</h3>
+                    <p class="product-brand">Exclusive</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$1,270</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Cannondale" data-price="790" data-name="High Timber 24in"
+                data-brand="Cannondale">
+                <div class="product-image">
+                    <img src="assets/images/516cb.webp" alt="High Timber 24in"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http: //www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">High Timber 24in</h3>
+                    <p class="product-brand">Cannondale</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$790</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Bianchi Limited Edition" data-price="999"
+                data-name="Hybrid Electric Bike" data-brand="Bianchi">
+                <div class="product-image">
+                    <img src="assets/images/Hybrid.png" alt="Hybrid Electric Bike"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http: //www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Hybrid Electric Bike</h3>
+                    <p class="product-brand">Bianchi</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$999</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Cannondale Orbea" data-price="980" data-name="Parkwood Electric Bike"
+                data-brand="Cannondale">
+                <div class="product-image">
+                    <img src="assets/images/ParkWood.png" alt="Parkwood Electric Bike"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http: //www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Parkwood Electric Bike</h3>
+                    <p class="product-brand">Cannondale</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$980</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Cannondale Exclusive Limited Edition" data-price="768"
+                data-name="Pro Bike Vortex" data-brand="Cannondale">
+                <div class="product-image">
+                    <img src="assets/images/kalkhoff-endeavour-5-b-xxl-blue-black-trapeze-2020_1-removebg-preview.png"
+                        alt="Pro Bike Vortex"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http: //www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pro Bike Vortex</h3>
+                    <p class="product-brand">Cannondale</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$768</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Cannondale Orbea Limited Edition" data-price="675"
+                data-name="Special Roar Bike CE" data-brand="Cannondale">
+                <div class="product-image">
+                    <img src="assets/images/da562.webp" alt="Special Roar Bike CE"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Special Roar Bike CE</h3>
+                    <p class="product-brand">Cannondale</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$675</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="Cannondale Orbea" data-price="805" data-name="Vega CE Low-Step"
+                data-brand="Cannondale">
+                <div class="product-image">
+                    <img src="assets/images/اباوت 3.webp" alt="Vega CE Low-Step"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23222%22 width=%22400%22 height=%22300%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23555%22 font-size=%2218%22>Bike Image</text></svg>'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vega CE Low-Step</h3>
+                    <p class="product-brand">Cannondale</p>
+                    <div class="product-price">
+                        <span class="current-price accent">$805</span>
+                        <button class="add-to-cart">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-17-16h2l3.6 7.59L4.25 12c-.16.28-.25.61-.25.96C4 14.1 4.9 15 6 15h13v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H17c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0021.46 2H3.21L2.54.57A1 1 0 001.63 0H0v2h1z" />
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="no-results" id="noResults" style="display:none;">No products found in this category.</div>
+
+        <div class="pagination" id="pagination">
+            <button class="page-btn prev-btn" id="prevBtn" onclick="changePage(-1)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+            </button>
+            <div class="page-numbers" id="pageNumbers"></div>
+            <button class="page-btn next-btn" id="nextBtn" onclick="changePage(1)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="contact-bar">
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Pre-sale Questions</span>
+            <a href="mailto:help@xtrabicycle.com" class="contact-bar__value">help@xtrabicycle.com</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Call Us</span>
+            <a href="tel:+18002345679" class="contact-bar__value">+1 800 2345 6789</a>
+        </div>
+        <div class="contact-bar__divider"></div>
+        <div class="contact-bar__item">
+            <span class="contact-bar__label">Our Location</span>
+            <a href="#" class="contact-bar__value">#2354, Beverly Hills, LA</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer__grid">
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Office</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__office-list">
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/موقع.png" alt="location">
+                        </div>
+                        <span>121 King Street, NewYork</span>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/هاتف.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003334455">+1 (800) 333 44 55</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/بريد.png" alt="email">
+                        </div>
+                        <a href="mailto:xtrabike@gmail.com">xtrabike@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/تلفون.png" alt="phone">
+                        </div>
+                        <a href="tel:+18003339988">+1 (800) 333 99 88</a>
+                    </li>
+                    <li>
+                        <div class="footer__img-circle">
+                            <img src="assets/images/اكس.png" alt="x">
+                        </div>
+                        <a href="#">@xtra_bikeshop</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">News</h4>
+                <div class="footer__col-underline"></div>
+                <ul class="footer__news-list">
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/montain-biker.jpg" alt="News 1" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">Top 7 Must have Accessories for...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 24</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer__news-item">
+                        <div class="footer__news-img-wrapper">
+                            <img src="assets/images/images.jpeg" alt="News 2" class="footer__news-img">
+                        </div>
+                        <div class="footer__news-text">
+                            <a href="#">How to Choose the Perfect Bike for Yo...</a>
+                            <div class="footer__news-meta">
+                                <span>&#128337; 10 June 2024</span>
+                                <span>&#128065; 18</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Shortcuts</h4>
+                <div class="footer__col-underline"></div>
+                <div class="footer__shortcuts">
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Home</a></li>
+                        <li><a href="#">&#8250; City Store</a></li>
+                        <li><a href="#">&#8250; News</a></li>
+                        <li><a href="#">&#8250; Clients</a></li>
+                        <li><a href="#">&#8250; Consultation</a></li>
+                        <li><a href="#">&#8250; Publicity</a></li>
+                        <li><a href="#">&#8250; Support</a></li>
+                    </ul>
+                    <ul class="footer__shortcuts-col">
+                        <li><a href="#">&#8250; Maps</a></li>
+                        <li><a href="#">&#8250; Careers</a></li>
+                        <li><a href="#">&#8250; Employees</a></li>
+                        <li><a href="#">&#8250; Teams</a></li>
+                        <li><a href="#">&#8250; Benefits</a></li>
+                        <li><a href="#">&#8250; Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__col-title">Working Hours</h4>
+                <div class="footer__col-underline"></div>
+                <p class="footer__hours-desc">
+                    Our support available to help you
+                    24 hours a day, seven days a week.
+                </p>
+                <ul class="footer__hours-list">
+                    <li>
+                        <span class="footer__hours-day">Monday to Friday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 4PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Saturday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time">8AM - 1PM</span>
+                    </li>
+                    <li>
+                        <span class="footer__hours-day">Sunday</span>
+                        <span class="footer__hours-dots"></span>
+                        <span class="footer__hours-time closed">Closed</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+            <div class="footer__payments">
+                <img src="assets/images/Mastercard.png" alt="Mastercard">
+                <img src="assets/images/PayPal.png" alt="PayPal">
+                <img src="assets/images/American Express.png" alt="American Express">
+                <img src="assets/images/bitcoin.jpeg" alt="bitcoin">
+                <img src="assets/images/Visa.png" alt="Visa">
+            </div>
+        </div>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
