@@ -564,6 +564,97 @@ body {
 }
 
 /* ===== END RIDE SECTION ===== */
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .revolution {
+        padding: 50px 40px;
+        gap: 30px;
+    }
+
+    .revolution__title {
+        font-size: 2rem;
+    }
+
+    .ride__title {
+        font-size: 2.2rem;
+    }
+
+    .ride__card {
+        margin: 0 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .revolution {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .revolution__bike {
+        max-width: 260px;
+    }
+
+    .revolution__title {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+
+    .revolution__desc {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .revolution__features {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        text-align: left;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .ride {
+        padding: 0 16px 40px 16px;
+    }
+
+    .ride__card {
+        margin: 0;
+        padding: 50px 24px;
+        border-radius: 20px;
+    }
+
+    .ride__title {
+        font-size: 1.8rem;
+    }
+
+    .ride__desc {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .revolution__title {
+        font-size: 1.45rem;
+    }
+
+    .revolution__features {
+        grid-template-columns: 1fr;
+        max-width: 240px;
+    }
+
+    .ride__title {
+        font-size: 1.5rem;
+    }
+
+    .ride__card {
+        padding: 40px 20px;
+    }
+}
 /* ===== BESTSELLERS SECTION ===== */
 .bestsellers {
     background-color: rgb(0, 0, 0);
